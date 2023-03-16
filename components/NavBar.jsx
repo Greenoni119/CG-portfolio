@@ -2,7 +2,6 @@ import React from 'react'
 import {FaBars, FaTimes} from 'react-icons/fa'
 import Head from 'next/head';
 import {Link} from "react-scroll";
-import FadeIn from 'react-fade-in';
 import { useState } from "react";
 import {GiMoonOrbit} from 'react-icons/gi';
   
@@ -36,7 +35,7 @@ return (
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-        <FadeIn>
+      
        <div className=' px-4 flex justify-between items-center w-full h-20 fixed bg-stone-700 opacity-90 z-10 dark:bg-violet-900'>
             <div className='opacity-0'>
             <GiMoonOrbit onClick={()=> setDarkMode(!darkMode)} className="cursor-pointer text-5xl text-neutral-400 dark:text-rose-800"/>
@@ -66,7 +65,7 @@ return (
                 </ul>
                       )}         
        </div>
-       </FadeIn>
+       
 
     </div>
   )
